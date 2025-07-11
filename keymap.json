@@ -9,6 +9,27 @@
   {
     "context": "Workspace",
     "bindings": {
+      "alt-t f": ["task::Spawn", { "task_name": "cargo test $FILE" }]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-e": ["task::Spawn", { "task_name": "Example task" }]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-g": [
+        "task::Spawn",
+        { "task_name": "start lazygit", "reveal_target": "center" }
+      ]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
       // "shift shift": "file_finder::Toggle"
     }
   },
