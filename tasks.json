@@ -1,7 +1,7 @@
 [
   {
-    "label": "cargo test $FILE",
-    "command": "cargo test $ZED_RELATIVE_FILE",
+    "label": "cargo test",
+    "command": "cargo test",
     "shell": "system"
   },
   {
