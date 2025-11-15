@@ -1,0 +1,47 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w v": "pane::SplitRight",
+      "alt-v": "pane::SplitRight",
+      "ctrl-w s": "pane::SplitDown",
+      "alt-s": "pane::SplitDown",
+
+      "ctrl-w w": "workspace::ActivateNextPane",
+      "alt-tab": "workspace::ActivateNextPane",
+
+      "alt-n": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-p": "pane::TogglePinTab",
+      "alt-shift-p": "pane::UnpinAllTabs"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-g": [
+        "task::Spawn",
+        { "task_name": "start lazygit", "reveal_target": "center" }
+      ]
+    }
+  },
+  // vim sneak (rarely used)
+  {
+    "context": "vim_mode == normal || vim_mode == visual",
+    "bindings": {
+      "s": "vim::PushSneak",
+      "shift-s": "vim::PushSneakBackward"
+    }
+  }
+]
