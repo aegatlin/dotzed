@@ -7,41 +7,42 @@
 // from the command palette.
 [
   {
-    "context": "Terminal",
     "bindings": {
+      "ctrl-w w": "workspace::ActivateNextPane",
+      "alt-tab": "workspace::ActivateNextPane",
+      "alt-shift-tab": "workspace::ActivatePreviousPane",
+      "alt alt-tab": "workspace::ActivatePreviousPane",
+
       "ctrl-w v": "pane::SplitRight",
       "alt-v": "pane::SplitRight",
       "ctrl-w s": "pane::SplitDown",
       "alt-s": "pane::SplitDown",
 
-      "ctrl-w w": "workspace::ActivateNextPane",
-      "alt-tab": "workspace::ActivateNextPane",
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "alt-h": "workspace::ActivatePaneLeft",
+      "ctrl-w j": "workspace::ActivatePaneDown",
+      "alt-j": "workspace::ActivatePaneDown",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "alt-k": "workspace::ActivatePaneUp",
+      "ctrl-w l": "workspace::ActivatePaneLeft",
+      "alt-l": "workspace::ActivatePaneRight",
 
-      "alt-n": "workspace::NewTerminal"
-    }
-  },
-  {
-    "context": "Pane",
-    "bindings": {
       "alt-p": "pane::TogglePinTab",
-      "alt-shift-p": "pane::UnpinAllTabs"
-    }
+      "alt-shift-p": "pane::UnpinAllTabs",
+    },
   },
   {
-    "context": "Workspace",
+    "context": "Terminal",
     "bindings": {
-      "alt-g": [
-        "task::Spawn",
-        { "task_name": "start lazygit", "reveal_target": "center" }
-      ]
-    }
+      "cmd-t": "workspace::NewTerminal",
+    },
   },
   // vim sneak (rarely used)
   {
     "context": "vim_mode == normal || vim_mode == visual",
     "bindings": {
       "s": "vim::PushSneak",
-      "shift-s": "vim::PushSneakBackward"
-    }
-  }
+      "shift-s": "vim::PushSneakBackward",
+    },
+  },
 ]

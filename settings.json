@@ -10,21 +10,13 @@
   "agent": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-opus-4-5"
+      "model": "claude-opus-4-5",
     },
-    "default_profile": "write"
-  },
-  "context_servers": {
-    "shadcn": {
-      "source": "custom",
-      "enabled": true,
-      "command": "npx",
-      "args": ["shadcn@latest", "mcp"]
-    }
+    "default_profile": "write",
   },
   "edit_predictions": {
     "mode": "subtle",
-    "enabled_in_text_threads": false
+    "enabled_in_text_threads": false,
   },
   "languages": {
     "Elixir": {
@@ -33,8 +25,8 @@
         "!elixir-ls",
         "!next-ls",
         "!lexical",
-        "..."
-      ]
+        "...",
+      ],
     },
     "HEEX": {
       "language_servers": [
@@ -42,12 +34,12 @@
         "!elixir-ls",
         "!next-ls",
         "!lexical",
-        "..."
-      ]
-    }
+        "...",
+      ],
+    },
   },
   "vim_mode": true,
   "vim": {
-    "toggle_relative_line_numbers": true
-  }
+    "toggle_relative_line_numbers": true,
+  },
 }
