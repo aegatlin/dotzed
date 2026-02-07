@@ -1,0 +1,10 @@
+{
+  "cl": {
+    "description": "console.log(\"thing\", thing)",
+    "body": ["console.log(\"$0\", $0)"]
+  },
+  "af": {
+    "description": "() => {\n}",
+    "body": ["($1) => {", "  $2", "}"]
+  }
+}

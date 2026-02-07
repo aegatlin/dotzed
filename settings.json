@@ -10,9 +10,9 @@
   "agent": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4"
+      "model": "claude-opus-4-5"
     },
-    "default_profile": "minimal"
+    "default_profile": "write"
   },
   "context_servers": {
     "shadcn": {
